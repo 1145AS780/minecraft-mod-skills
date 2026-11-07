@@ -21,7 +21,7 @@
 
 ```
 skills/
-├── minecraft-mod-autopilot/
+├── minecraft-mod-autopilot/  
 │   ├── SKILL.md                  入口：触发条件与工作循环
 │   ├── references/               按需读取的细分文档
 │   │   ├── forge-1.20.1-api.md
@@ -69,7 +69,8 @@ skills/
 
 - `LICENSE`：MIT 许可
 - `README.md`：英文版说明（默认渲染）
-- `ai-behavior-spec.md`：通用 AI 行为准则
+- `ai-behavior-spec.md`：通用 AI 行为准则（英文版，默认渲染）
+- `ai-behavior-spec.zh-CN.md`：通用 AI 行为准则（中文版）
 - `.gitignore`、`.gitattributes`、`.aiignore`：版本库与编辑器约定
 
 ## 说明
