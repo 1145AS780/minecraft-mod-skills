@@ -1,0 +1,74 @@
+# Minecraft 模组开发技能集
+
+[English](README.md) | **中文**
+
+本仓库只收录可供 AI 编码助手加载的技能文档，不含模组源码、第三方 jar 与运行时产物。
+
+## 收录内容
+
+| 技能 | 定位 | 文件数 |
+| --- | --- | --- |
+| `skills/minecraft-mod-autopilot` | Forge 1.20.1 模组的自动化开发闭环：写代码 → 构建 → 启动客户端 → 采集 `latest.log` 与 `crash-reports` → 定位修复 → 复验。附构建、启动、诊断脚本与验收层级表 | 9 |
+| `skills/minecraft-libraries` | 多加载器代码参考库：Forge 1.20.1、NeoForge 1.21.1、Fabric 1.21.1、Paper 插件、原版数据包、OptiFine/Iris 光影包 | 27 |
+
+另一个相关但独立的技能放在单独仓库：[`background-task-scheduler`](https://github.com/1145AS780/background-task-scheduler)，是面向 AI Agent 的本地无守护进程任务调度器。它与加载器无关，与本仓库的技能无代码耦合。
+
+## 目录结构
+
+```
+skills/
+├── minecraft-mod-autopilot/
+│   ├── SKILL.md                  入口：触发条件与工作循环
+│   ├── references/               按需读取的细分文档
+│   │   ├── forge-1.20.1-api.md
+│   │   ├── error-triage.md
+│   │   ├── automation-loop.md
+│   │   └── ws-bridge.md
+│   └── scripts/                  可直接调用的脚本
+│       ├── build.ps1
+│       ├── run-client.ps1
+│       ├── launch-pcl2.ps1
+│       └── collect-diagnostics.ps1
+├── minecraft-libraries/
+│   ├── SKILL.md
+│   ├── mod-loader-api/           各加载器的标准 API 参考
+│   │   ├── forge-1.20.1.md
+│   │   ├── neoforge-1.21.1.md
+│   │   ├── fabric.md
+│   │   ├── paper-bukkit.md
+│   │   ├── datapack-1.20.1.md
+│   │   ├── vanilla-datapack-nbt.md
+│   │   ├── shaderpack-1.20.1.md
+│   │   ├── version-migration.md
+│   │   └── local-decompile.md
+│   └── code-reference/
+│       └── forge-1.20.1/         实战代码与踩坑记录
+```
+
+## 目录约定
+
+| 约定 | 说明 |
+| --- | --- |
+| 一技能一目录 | 目录名即技能名，与 `SKILL.md` 的 `description` 中出现的名称一致 |
+| `SKILL.md` 是唯一入口 | 助手只加载这一个文件；头部 YAML 的 `description` 决定触发条件，正文负责路由到下层文档 |
+| `references/` 复数、平铺 | 按主题切分的细分文档，一律复数命名、直接放在技能根下，不再嵌套层级 |
+| `scripts/` 只放可执行件 | `.ps1` / `.py` 等可直接调用，不含文档；脚本自解析仓库根，不硬编码绝对路径 |
+| `code-reference/` 按加载器分层 | 一层是加载器名（如 `forge-1.20.1/`），其下平铺主题文件，便于整体替换或新增加载器 |
+| `examples/` 归在 `references/` 内 | 样例属于文档而非工具，与解释它的规范放在一起 |
+| 不提交构建产物 | `__pycache__/`、`.bak-*`、日志与缓存一律不进版本库 |
+
+## 使用方式
+
+把需要的技能目录整体放入所用助手的技能目录即可，无需额外依赖。两个技能可组合使用：`minecraft-mod-autopilot` 负责构建与运行验证，`minecraft-libraries` 提供各加载器的 API 与实战代码参考。
+
+## 其它文件
+
+- `LICENSE`：MIT 许可
+- `README.md`：英文版说明（默认渲染）
+- `ai-behavior-spec.md`：通用 AI 行为准则
+- `.gitignore`、`.gitattributes`、`.aiignore`：版本库与编辑器约定
+
+## 说明
+
+- 技能文档中的 Mod ID、包根、构建产物名一律以 `<modid>`、`<group>.<modid>`、`<archivesName>` 等占位符表示，不对应任何具体工程。
+- 本项目基于 [MIT 许可](LICENSE) 发布，可自由使用、修改与再分发，保留版权声明即可。

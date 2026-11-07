@@ -1,0 +1,104 @@
+# eclipse
+bin
+*.launch
+.settings
+.metadata
+.classpath
+.project
+
+# idea
+out
+*.ipr
+*.iws
+*.iml
+.idea
+
+# gradle
+build
+.gradle
+
+# other
+eclipse
+run
+
+# Files from Forge MDK
+forge*changelog.txt
+
+# python
+__pycache__/
+*.pyc
+
+# ===== 开发环境与运行时产物（不进版本库） =====
+# 本地服务端、开发用 Minecraft 运行时、Gradle 缓存目录
+server/
+.ed-minecraft-dev/
+run/
+run-data/
+logs/
+
+# 运行时 mods 目录：包含发布 jar、反编译源码、崩溃报告，体积以百 MB 计
+mods/
+
+# 临时草稿目录：反编译产物、一次性补丁脚本、调试日志
+.tmp/
+
+# 后台任务调度器状态（任务历史、事件流、日志）
+.bts/
+.autopilot/
+
+# 空的占位目录
+.screenshots/
+tlm_custom_pack/
+
+# ===== 日志 =====
+*.log
+
+# ===== jar 解包/补丁过程散落到根目录的残留（仅根目录生效） =====
+/net/
+/assets/
+/data/
+/META-INF/
+
+# ===== 一次性调试脚本与 DSH 脚手架（build.gradle 从未 apply） =====
+rc_*.ps1
+rc_*.log
+build-dsh.gradle
+dsbuild.gradle
+gradle.dsh.gradle
+
+# ===== 备份文件 =====
+*.bak
+*.bak-*
+*.depbak
+*.orig.json.bak
+
+# ===== AI 工具本地配置：rules / scripts / references / skills 全部只在本地，不进仓库 =====
+.trae/
+
+# ===== 第三方模组 jar 补丁工具链（反编译与改包，不公开） =====
+.tlm_tool/
+
+# ===== 第三方模组依赖 jar：仅本地编译期使用，不随仓库分发 =====
+libs/*.jar
+
+# ===== 仓库只收录 skills 与通用文档：以下全部只在本地保留 =====
+# 注意：带前导斜杠只匹配根级目录，不影响 skills/ 下的同名文件
+/src/
+/gradle/
+/build.gradle
+/settings.gradle
+/gradle.properties
+/ENVIRONMENT.md
+/gradlew
+/gradlew.bat
+/ai-*/
+/libs/
+/tools/
+/LICENSE.txt
+/CREDITS.txt
+/qodana.yaml
+
+# ===== 本地自用文档与素材：仅本地保留，不随仓库分发 =====
+/wiki/
+/rss/
+/resourcepacks/

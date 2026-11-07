@@ -1,0 +1,56 @@
+NOTICE
+======
+
+This repository (minecraft-mod-skills) contains documentation, API references and
+engineering notes for Minecraft mod development. All prose and code in this
+repository is original work by 1145AS780 and is licensed under the MIT License
+(see LICENSE).
+
+Third-Party Mods Referenced
+---------------------------
+
+The documents under `skills/minecraft-libraries/` discuss interoperability with
+third-party Minecraft mods. Those mods are referenced by name only, for the
+purpose of describing their public APIs, behaviour and integration constraints.
+No source code, asset or data file from those mods is copied, redistributed or
+bundled in this repository.
+
+  * Iron's Spells 'n Spellbooks
+      All Rights Reserved (no license permitting redistribution).
+      Referenced for behaviour observation and public API surface only.
+      No code from this mod is included here.
+
+  * Touhou Little Maid (touhou_little_maid)
+      Code: MIT License, Copyright (c) TartaricAcid and contributors.
+      Assets (models, textures, sounds): CC BY-NC-SA 4.0.
+      Referenced for public extension-point names and API behaviour only.
+      No code or asset from this mod is included here.
+
+  * Ars Nouveau, Goety, Mana and Artifice, Psi, SlashBlade, Wizardry,
+    Youkai Homecoming
+      Referenced by name as integration targets only. No code included.
+
+Minecraft, Minecraft Forge, NeoForge, Fabric and their respective mappings are
+the property of their respective owners. Obfuscation/SRG identifier tables in
+this repository are factual mapping data produced by independent inspection and
+are not copies of any decompiled source file.
+
+If you are a rights holder and believe content here exceeds permissible
+reference, open an issue and the material will be removed promptly.
+
+中文说明
+--------
+
+本仓库仅包含原创文档与说明。文档中提到的第三方模组（Iron's Spells 'n
+Spellbooks、Touhou Little Maid 等）**仅以名称引用**，用于描述其公开 API、
+行为表现与集成约束，**不包含、不再分发其任何源码、资源或数据文件**。
+
+  * Iron's Spells 'n Spellbooks：All Rights Reserved，本项目不复制其代码，
+    仅作行为参考。
+  * Touhou Little Maid：代码为 MIT（Copyright (c) TartaricAcid 及贡献者），
+    资源为 CC BY-NC-SA 4.0；本项目不复制其代码或资源，仅引用其公开扩展点名称。
+
+文档中的混淆名 / SRG 名对照表为独立核对得出的**事实性映射数据**，不是任何
+反编译源码文件的复制。
+
+如权利人对本仓库内容有异议，请提交 issue，将立即删除相关内容。
