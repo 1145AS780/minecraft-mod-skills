@@ -19,21 +19,3 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-
---------------------------------------------------------------------------
-
-第三方内容例外 / Third-Party Exception
-
-The MIT License above applies only to the original content of this repository
-(documentation prose, tables, examples and code authored by 1145AS780).
-
-It does NOT grant any rights to third-party Minecraft mods referenced in the
-documentation, nor to Minecraft / Minecraft Forge / NeoForge / Fabric and their
-mappings, which remain under their respective owners' terms. Such third-party
-material is referenced by name only; no third-party source code, assets or data
-files are redistributed here. See NOTICE for the full list and attribution.
-
-上述 MIT 许可仅覆盖本仓库的原创内容（原创文档正文、表格、示例与代码）。
-它不授予任何第三方 Minecraft 模组的权利，也不授予 Minecraft / Forge /
-NeoForge / Fabric 及其映射的权利；这些内容仍归各自权利人所有，本仓库仅以
-名称引用，不再分发其源码、资源或数据文件。完整清单与归属声明见 NOTICE。

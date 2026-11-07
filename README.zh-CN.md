@@ -1,5 +1,9 @@
 # Minecraft 模组开发技能集
 
+<p align="center">
+  <img src=".github/assets/banner.svg" alt="Minecraft 模组开发技能集" width="100%">
+</p>
+
 [English](README.md) | **中文**
 
 本仓库只收录可供 AI 编码助手加载的技能文档，不含模组源码、第三方 jar 与运行时产物。

@@ -1,5 +1,9 @@
 # Minecraft Mod Development Skills
 
+<p align="center">
+  <img src=".github/assets/banner.svg" alt="Minecraft Mod Development Skills" width="100%">
+</p>
+
 **English** | [中文](README.zh-CN.md)
 
 A collection of skill documents for AI coding assistants working on Minecraft mod development. This repository contains documentation and scripts only — no mod source code, no third-party jars, no runtime artifacts.

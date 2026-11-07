@@ -6,6 +6,18 @@ engineering notes for Minecraft mod development. All prose and code in this
 repository is original work by 1145AS780 and is licensed under the MIT License
 (see LICENSE).
 
+License Scope
+-------------
+
+The MIT License applies only to the original content of this repository
+(documentation prose, tables, examples and code authored by 1145AS780).
+
+It does NOT grant any rights to third-party Minecraft mods referenced in the
+documentation, nor to Minecraft / Minecraft Forge / NeoForge / Fabric and their
+mappings, which remain under their respective owners' terms. Such third-party
+material is referenced by name only; no third-party source code, assets or data
+files are redistributed here.
+
 Third-Party Mods Referenced
 ---------------------------
 
@@ -44,6 +56,10 @@ reference, open an issue and the material will be removed promptly.
 本仓库仅包含原创文档与说明。文档中提到的第三方模组（Iron's Spells 'n
 Spellbooks、Touhou Little Maid 等）**仅以名称引用**，用于描述其公开 API、
 行为表现与集成约束，**不包含、不再分发其任何源码、资源或数据文件**。
+
+MIT 许可仅覆盖本仓库的原创内容（原创文档正文、表格、示例与代码）。它不授予
+任何第三方 Minecraft 模组的权利，也不授予 Minecraft / Forge / NeoForge /
+Fabric 及其映射的权利；这些内容仍归各自权利人所有。
 
   * Iron's Spells 'n Spellbooks：All Rights Reserved，本项目不复制其代码，
     仅作行为参考。
