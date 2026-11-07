@@ -5,6 +5,8 @@
 A collection of skill documents for AI coding assistants working on Minecraft mod development. This repository contains documentation and scripts only — no mod source code, no third-party jars, no runtime artifacts.
 
 > **Localize before use.** These documents ship with placeholders such as `<modid>`, `<group>.<modid>`, and `<minecraft-dir>`. Have your AI assistant rewrite the paths, mod IDs, and script names against your actual workspace on first load.
+>
+> - [ ] Localized for this workspace — tick this box once the placeholders are replaced.
 
 ## Contents
 
