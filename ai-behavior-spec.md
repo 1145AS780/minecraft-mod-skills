@@ -1,7 +1,5 @@
 # AI Behavior Spec (General)
 
-**English** | [中文](ai-behavior-spec.zh-CN.md)
-
 For any AI coding assistant, independent of IDE, plugin, or command-line tool.
 Whether the host is an in-editor agent, a terminal agent, or a custom client, this spec applies.
 

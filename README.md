@@ -72,7 +72,6 @@ The two skills compose well together: `minecraft-mod-autopilot` handles building
 - [`LICENSE`](LICENSE): MIT
 - [`README.zh-CN.md`](README.zh-CN.md): Chinese version
 - [`ai-behavior-spec.md`](ai-behavior-spec.md): general AI behavior guidelines
-- [`ai-behavior-spec.zh-CN.md`](ai-behavior-spec.zh-CN.md): Chinese version of the behavior guidelines
 - `.gitignore`, `.gitattributes`, `.aiignore`: repository and editor conventions
 
 ## Notes

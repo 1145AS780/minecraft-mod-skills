@@ -69,8 +69,7 @@ skills/
 
 - `LICENSE`：MIT 许可
 - `README.md`：英文版说明（默认渲染）
-- `ai-behavior-spec.md`：通用 AI 行为准则（英文版，默认渲染）
-- `ai-behavior-spec.zh-CN.md`：通用 AI 行为准则（中文版）
+- `ai-behavior-spec.md`：通用 AI 行为准则
 - `.gitignore`、`.gitattributes`、`.aiignore`：版本库与编辑器约定
 
 ## 说明
